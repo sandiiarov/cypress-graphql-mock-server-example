@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "BROWSER=none react-scripts start"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "1.4.3",
+    "apollo-client": "2.4.13",
+    "apollo-link-http": "1.5.11",
+    "graphql-tag": "2.10.1",
+    "react": "16.8.2",
+    "react-apollo": "2.4.1",
+    "react-dom": "16.8.2",
+    "react-scripts": "2.1.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

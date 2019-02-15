@@ -1,0 +1,10 @@
+schema: ./schema.graphql
+overwrite: true
+generates:
+  ./__generated__/graphql.ts:
+    config:
+      noNamespaces: true
+    plugins:
+      - typescript-common
+      - typescript-server
+      - typescript-mocks

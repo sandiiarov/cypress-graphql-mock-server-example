@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "types": ["cypress", "cypress-graphql-mock-server"]
+  },
+  "include": ["cypress", "__generated__"],
+  "exclude": ["node_modules", "cypress/plugins"]
+}

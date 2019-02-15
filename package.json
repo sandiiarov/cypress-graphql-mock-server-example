@@ -1,0 +1,32 @@
+{
+  "name": "cypress-graphql-mock-server-example",
+  "version": "0.0.0",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:integration": "is-ci \"cy:run\" \"cy:open\"",
+    "start:mock-server": "graphql-mock-server ./schema.graphql -p 4000",
+    "start:app": "yarn --cwd ./app start",
+    "start:app-and-mock-server": "start-test start:mock-server 4000 start:app",
+    "test": "start-test start:app-and-mock-server 3000 test:integration",
+    "generate": "gql-gen"
+  },
+  "dependencies": {
+    "cypress": "3.1.5",
+    "cypress-graphql-mock-server": "0.1.0"
+  },
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "4.0.3",
+    "@types/graphql": "14.0.7",
+    "graphql-code-generator": "0.16.1",
+    "graphql-codegen-typescript-common": "0.16.1",
+    "graphql-codegen-typescript-mocks": "0.1.2",
+    "graphql-codegen-typescript-server": "0.16.1",
+    "graphql-mock-server": "0.1.0",
+    "is-ci-cli": "1.1.1",
+    "start-server-and-test": "1.7.11",
+    "ts-loader": "5.3.3",
+    "typescript": "3.2.1",
+    "webpack": "4.28.3"
+  }
+}
